@@ -12,8 +12,8 @@ Your repository should include the following:
 
 - Python script for analysis: Pawe_Kaluski_Final_Project_CEBD1160_wine.py
 - Results figure/saved file: Graphs/Actual_Predicted/Actual_Predicted.png
-                             Graphs/Actual_ResidualDiff
-                             Graphs/ResidualDiff_Distribution
+                             Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png
+                             Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png
 - Dockerfile for your experiment:
 - runtime-instructions in a file named RUNME.md
 
@@ -25,17 +25,19 @@ Can we determine the Hue based on the other caracteristics?
 
 ### Abstract
 
-The wine dataset is composed of 13 different characteristics. The wines in this dataset are from 3 different regions. Some of the properties, I known. Other ones are chemicals that I never heard. I wanted to build a model that will predict the hue based on the other properties.
-My starting point was the “scipy cheat sheet” https://scikit-learn.org/stable/tutorial/machine_learning_map/ 
-By process of elimination it led me to use linear regression model with fit.
+- opportunity: wine.data (what data do we have)
+- challenge: Diffuculty defining purpose of certain properties. (what is the "problem" we could solve with this dataset)
+- action: Run the appropriate algorythm to answer the question. (how will we try to solve this problem/answer this question)
+- resolution: Used Linear Regression Model
 
 ### Introduction
 
-Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
+The wine dataset is composed of 13 different characteristics. (class, alcohol, malic acid, ash, alcalinity of ash, magnesium, total phenols, flavanoids, nonflavanoid phenols, proanthocyanins, color_intensity, hue, od280 od315 of diluted wines and proline) The wines in this dataset are from 3 different regions (represented by the class column). Some of the properties, I known. Other ones are chemicals I never heard. I wanted to build a model that will predict the hue based on the other properties. My starting point was the “scipy cheat sheet” https://scikit-learn.org/stable/tutorial/machine_learning_map/ By process of elimination it led me to use linear regression model with fit.
 
 ### Methods
 
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
+I used pandas to read the wine.dat by setting the separator and defining the column names. Pandas were also used to select the X and the y. X being the data (all fields excluding the target and class) and y, the target (hue). Next I split the dataset in two. One portion is the test and the remaining portion will be used to train my model. I used test size 0.38. next I trained my model using a linear regression with fit. Next, I compared my models predictions to the actual in the test dataset. I printed the residual difference for every actual hue in the test data set.
 
 - pseudocode for this method (either created by you or cited from somewhere else)
 - why you chose this method
