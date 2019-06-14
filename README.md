@@ -10,8 +10,10 @@ Instructions and template for final projects.
 ### Resources
 Your repository should include the following:
 
-- Python script for analysis:
-- Results figure/saved file:
+- Python script for analysis: Pawe_Kaluski_Final_Project_CEBD1160_wine.py
+- Results figure/saved file: Graphs/Actual_Predicted/Actual_Predicted.png
+                             Graphs/Actual_ResidualDiff
+                             Graphs/ResidualDiff_Distribution
 - Dockerfile for your experiment:
 - runtime-instructions in a file named RUNME.md
 
@@ -19,19 +21,13 @@ Your repository should include the following:
 
 ## Research Question
 
-What are the two wine properties with the greatest corelation?
-Is this corelation same across all regions?
+Can we determine the Hue based on the other caracteristics?
 
 ### Abstract
 
-The wine dataset is composed of 13 different caracteristics. The wines in this dataset are from 3 different regions.
-Some of the properties are known by the general public, others are chemicals that most never heard. I wanted to see how 
-the properties intercted together which led me to ask what are the two componanents with the strongest corelation and is 
-this corelation equivalent regardless of which region the wine is from. I started by exploring
-- opportunity (what data do we have)
-- challenge (what is the "problem" we could solve with this dataset)
-- action (how will we try to solve this problem/answer this question)
-- resolution (what did we end up producing)
+The wine dataset is composed of 13 different characteristics. The wines in this dataset are from 3 different regions. Some of the properties, I known. Other ones are chemicals that I never heard. I wanted to build a model that will predict the hue based on the other properties.
+My starting point was the “scipy cheat sheet” https://scikit-learn.org/stable/tutorial/machine_learning_map/ 
+By process of elimination it led me to use linear regression model with fit.
 
 ### Introduction
 
