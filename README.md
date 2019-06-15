@@ -36,9 +36,9 @@ The wine dataset is composed of 13 different characteristics. (class, alcohol, m
 
 ### Methods
 
-I used pandas to read the wine.dat by setting the separator and defining the column names. Pandas were also used to select the X and the y. X being the data (all fields excluding the target and class) and y, the target (hue). Next I split the dataset in two. One portion is the test and the remaining portion will be used to train my model. I used test size 0.38. next I trained my model using a linear regression with fit. Next, I compared my models predictions to the actual in the test dataset. I printed the residual difference for every actual hue in the test data set. Next, I generated scatter graphs to illustrate actual vs predicted vales and actual to residual difference, and a distribution graph for residual difference distribution.
+I used pandas to read the wine.dat by setting the separator and defining the column names. Pandas were also used to select the X and the y. X being the data (all fields excluding the target and class) and y, the target (hue). Next, I split the dataset in two. One portion is the test and the remaining portion will be used to train my model. I used test size 0.38. next I trained my model using a linear regression with fit. Next, I compared my models' predictions to the actual in the test dataset. I printed the residual difference for every actual hue in the test data set. Next, I generated scatter graphs to illustrate actual vs predicted vales and actual to residual difference, and a distribution graph for residual difference distribution.
 
-The reason I chose those methodes was influenced by the “scipy cheat sheet”.
+The reason I chose those methods was influenced by the “scipy cheat sheet”.
 
 
 ### Results
@@ -52,17 +52,16 @@ Brief (2 paragraph) description about your results. Include:
 ![matrix](Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png)
 
 
-MAE error(avg abs residual): 0.1227137298538843
+MAE error(avg abs residual): 0.11408842164265774
 
-MSE error: 0.026459679261195926
+MSE error: 0.022204702845131857
 
-RMSE error: 0.16266431465197254
-
+RMSE error: 0.1490124251367377
 
 
 ### Discussion
 
-The graphs above visualize the accuracy of the model. My model is predicting the hue based on the other properties. wheter it's doing a great job, I'm not 100% sure. To my understanding, lower error numbers translate to better accuracy. One way to improve this model is to feed it back to more data. We could also attempt to change the ratio between train and test and see the output. 
+The graphs above visualize the accuracy of the model. My model is predicting the hue based on the other properties. Is it doing a great job? I'm not 100% sure. To my understanding, lower error numbers translate to better accuracy. One way to improve this model is to feed it back to more data. We could also attempt to change the ratio between train and test and see the output. 
 
 ### References
 
