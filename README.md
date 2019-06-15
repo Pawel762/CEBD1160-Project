@@ -8,7 +8,6 @@ Instructions and template for final projects.
 -----
 
 ### Resources
-Your repository should include the following:
 
 - Python script for analysis: Pawe_Kaluski_Final_Project_CEBD1160_wine.py
 - Results figure/saved file: 
@@ -60,12 +59,14 @@ RMSE error: 0.16266431465197254
 
 
 ### Discussion
-Brief (no more than 1-2 paragraph) description about what you did. Include:
 
-- interpretation of whether your method "solved" the problem
-- suggested next step that could make it better.
+The graphs above visualize the accuracy of the model. My model is predicting the hue based on the other properties. wheter it's doing a great job, I'm not 100% sure. To my understanding, lower error numbers translate to better accuracy. One way to improve this model is to feed it back to more data. We could also attempt to change the ratio between train and test and see the output. 
 
 ### References
-All of the links
+
+Overall structure of this document: https://github.com/cce-bigdataintro-1160/cebd1160_project_template/tree/gkexample
+“scipy cheat sheet”: https://scikit-learn.org/stable/tutorial/machine_learning_map/
+Script inspired from spring 2019 CEBD class notes/homework
+
 
 -------
