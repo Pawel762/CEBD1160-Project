@@ -11,9 +11,10 @@ Instructions and template for final projects.
 Your repository should include the following:
 
 - Python script for analysis: Pawe_Kaluski_Final_Project_CEBD1160_wine.py
-- Results figure/saved file: Graphs/Actual_Predicted/Actual_Predicted.png
-                             Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png
-                             Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png
+- Results figure/saved file: 
+Graphs/Actual_Predicted/Actual_Predicted.png
+Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png
+Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png
 - Dockerfile for your experiment:
 - runtime-instructions in a file named RUNME.md
 
@@ -36,15 +37,21 @@ The wine dataset is composed of 13 different characteristics. (class, alcohol, m
 
 ### Methods
 
-Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
-I used pandas to read the wine.dat by setting the separator and defining the column names. Pandas were also used to select the X and the y. X being the data (all fields excluding the target and class) and y, the target (hue). Next I split the dataset in two. One portion is the test and the remaining portion will be used to train my model. I used test size 0.38. next I trained my model using a linear regression with fit. Next, I compared my models predictions to the actual in the test dataset. I printed the residual difference for every actual hue in the test data set.
+I used pandas to read the wine.dat by setting the separator and defining the column names. Pandas were also used to select the X and the y. X being the data (all fields excluding the target and class) and y, the target (hue). Next I split the dataset in two. One portion is the test and the remaining portion will be used to train my model. I used test size 0.38. next I trained my model using a linear regression with fit. Next, I compared my models predictions to the actual in the test dataset. I printed the residual difference for every actual hue in the test data set. Next, I generated scatter graphs to illustrate actual vs predicted vales and actual to residual difference, and a distribution graph for residual difference distribution.
 
-- pseudocode for this method (either created by you or cited from somewhere else)
-- why you chose this method
+The reason I chose those methodes was influenced by the “scipy cheat sheet”.
+
 
 ### Results
 
 Brief (2 paragraph) description about your results. Include:
+![matrix](.Graphs/Actual_Predicted/Actual_Predicted.png)
+
+![matrix](Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png)
+
+![matrix](Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png)
+
+
 
 - At least 1 figure
 - At least 1 "value" that summarizes either your data or the "performance" of your method
