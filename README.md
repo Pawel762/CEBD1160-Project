@@ -14,8 +14,8 @@ Instructions and template for final projects.
 Graphs/Actual_Predicted/Actual_Predicted.png
 Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png
 Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png
-- Dockerfile for your experiment:
-- runtime-instructions in a file named RUNME.md
+- Dockerfile for your experiment: will add shortly
+- runtime-instructions in a file named RUNME.md: will create once Dockerfile is included
 
 -----
 
