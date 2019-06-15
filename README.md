@@ -53,7 +53,9 @@ Brief (2 paragraph) description about your results. Include:
 
 
 MAE error(avg abs residual): 0.1227137298538843
+
 MSE error: 0.026459679261195926
+
 RMSE error: 0.16266431465197254
 
 
@@ -66,6 +68,7 @@ The graphs above visualize the accuracy of the model. My model is predicting the
 
 Overall structure of this document: https://github.com/cce-bigdataintro-1160/cebd1160_project_template/tree/gkexample
 “scipy cheat sheet”: https://scikit-learn.org/stable/tutorial/machine_learning_map/
+
 Script inspired from spring 2019 CEBD class notes/homework
 
 
