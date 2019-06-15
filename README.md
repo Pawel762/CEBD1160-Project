@@ -46,7 +46,7 @@ The reason I chose those methodes was influenced by the “scipy cheat sheet”.
 
 Brief (2 paragraph) description about your results. Include:
 
-![performange figure](.Graphs/Actual_Predicted/Actual_Predicted.png)
+![performange figure](Graphs/Actual_Predicted/Actual_Predicted.png)
 
 ![matrix](Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png)
 
