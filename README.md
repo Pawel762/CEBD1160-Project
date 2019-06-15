@@ -46,17 +46,18 @@ The reason I chose those methodes was influenced by the “scipy cheat sheet”.
 
 Brief (2 paragraph) description about your results. Include:
 
-![matrix](.Graphs/Actual_Predicted/Actual_Predicted.png)
+![performange figure](.Graphs/Actual_Predicted/Actual_Predicted.png)
 
 ![matrix](Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png)
 
 ![matrix](Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png)
 
 
+MAE error(avg abs residual): 0.1227137298538843
+MSE error: 0.026459679261195926
+RMSE error: 0.16266431465197254
 
-- At least 1 figure
-- At least 1 "value" that summarizes either your data or the "performance" of your method
-- A short explanation of both of the above
+
 
 ### Discussion
 Brief (no more than 1-2 paragraph) description about what you did. Include:
