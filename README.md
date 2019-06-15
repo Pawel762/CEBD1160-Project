@@ -45,6 +45,7 @@ The reason I chose those methodes was influenced by the “scipy cheat sheet”.
 ### Results
 
 Brief (2 paragraph) description about your results. Include:
+
 ![matrix](.Graphs/Actual_Predicted/Actual_Predicted.png)
 
 ![matrix](Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png)
