@@ -7,7 +7,7 @@ from sklearn.externals import joblib
 import pandas as pd
 import os
 
-wine_df = pd.read_csv('data/wine.data',
+wine_df = pd.read_csv('wine.data',
                       sep=',',
                       header=0)
 wine_df.columns = ['class', 'alcohol', 'malic_acid', 'ash', 'alcalinity_of_ash', 'magnesium', 'total_phenols',
@@ -24,8 +24,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.38)
 lm = LinearRegression()
 lm.fit(X_train, y_train)
 
-# # save the model to disk
-# joblib.dump(lm, 'Pawel_Kaluski_Wine_Model.sav')
+# save the model to disk
+joblib.dump(lm, 'Pawel_Kaluski_Wine_Model.sav')
 
 # # Load the model
 # lm_load = joblib.load('Pawel_Kaluski_Wine_Model.sav')
@@ -41,15 +41,15 @@ for (real, predicted) in list(zip(y_test, predicted_values)):
 # Plotting the residuals: difference between Actual and Predicted
 sns.set(palette="plasma")
 residuals = y_test - predicted_values
-os.makedirs('Graphs/Actual_Predicted', exist_ok=True)
-os.makedirs('Graphs/Actual_ResidualDiff', exist_ok=True)
-os.makedirs('Graphs/ResidualDiff_Distribution', exist_ok=True)
+os.makedirs('chart', exist_ok=True)
+os.makedirs('chart', exist_ok=True)
+os.makedirs('chart', exist_ok=True)
 
 sns.scatterplot(y_test, predicted_values)
 plt.plot([0, 2], [0, 2], '--')
 plt.xlabel('Actual Value')
 plt.ylabel('Predicted Value')
-plt.savefig('Graphs/Actual_Predicted/Actual_Predicted.png', dpi=300)
+plt.savefig('chart/Actual_Predicted.png', dpi=300)
 plt.show()
 plt.close()
 
@@ -57,14 +57,14 @@ sns.scatterplot(y_test, residuals)
 plt.plot([2, 0], [0, 0], '--')
 plt.xlabel('Actual Value')
 plt.ylabel('Residual (difference)')
-plt.savefig('Graphs/Actual_ResidualDiff/Actual_ResidualDiff.png', dpi=300)
+plt.savefig('chart/Actual_ResidualDiff.png', dpi=300)
 plt.show()
 plt.close()
 
 sns.distplot(residuals, bins=20, kde=False)
 plt.plot([0, 0], [2, 0], '--')
 plt.title('Residual (difference) Distribution')
-plt.savefig('Graphs/ResidualDiff_Distribution/ResidualDiff_Distribution.png', dpi=300)
+plt.savefig('chart/ResidualDiff_Distribution.png', dpi=300)
 plt.show()
 plt.close()
 
