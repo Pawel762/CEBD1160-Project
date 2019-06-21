@@ -9,7 +9,7 @@ In the directory where the Dockerfile is located, run the following line
 
 From the same location, run the following line
 
-#### ```sudo docker run pk-cebd1160-project-container ```
+#### ``` sudo docker run pk-cebd1160-project-container ```
 
 > # Python Script:
 
@@ -23,4 +23,4 @@ To successfully run the script, make sure you have the following libraries insta
 * pandas
 
 Once successfully installed, run:
-#### ```Python3 Pawe_Kaluski_Final_Project_CEBD1160_wine.py``` 
+#### ``` Python3 Pawe_Kaluski_Final_Project_CEBD1160_wine.py ``` 
