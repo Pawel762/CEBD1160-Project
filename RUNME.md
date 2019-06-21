@@ -1,4 +1,4 @@
-> #Docker:
+> # Docker:
 * Create the Image: 
 
 In the directory where the Dockerfile is located, run the following line
