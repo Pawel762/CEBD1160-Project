@@ -63,6 +63,13 @@ RMSE error: 0.1490124251367377
 
 The graphs above visualize the accuracy of the model. My model is predicting the hue based on the other properties. Is it doing a great job? I'm not 100% sure. To my understanding, lower error numbers translate to better accuracy. One way to improve this model is to feed it back to more data. We could also attempt to change the ratio between train and test and see the output. 
 
+I attempted to improve the accuracy by removing some features. To determine which features to remove, I used a heatmap to visualy identify correlations.
+
+![matrix](chart/heatmap-all.png)
+
+I decided to remove 'hue', 'class','alcohol','ash','magnesium','nonflavanoid_phenols','proanthocyanins' and 'proline'
+running the model didn't show a major improvement.
+
 ### References
 
 Overall structure of this document: https://github.com/cce-bigdataintro-1160/cebd1160_project_template/tree/gkexample
