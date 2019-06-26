@@ -67,8 +67,7 @@ I attempted to improve the accuracy by removing some features. To determine whic
 
 ![matrix](chart/heatmap-all.png)
 
-I decided to remove 'hue'(the target), 'class','alcohol','ash','magnesium','nonflavanoid_phenols','proanthocyanins' and 'proline'
-running the model didn't show a major improvement. Perhaps I could add more properties. With the time allowed, this is the best I cando. I will be adding cross validation and experiment other regression algorithm.
+I decided to remove 'hue'(the target), 'class','alcohol','ash' and 'magnesium' running the model didn't show a major improvement. I will be adding cross validation and experiment other regression algorithm.
 
 ### References
 
