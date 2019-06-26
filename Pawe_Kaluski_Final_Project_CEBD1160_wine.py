@@ -14,7 +14,7 @@ wine_df.columns = ['class', 'alcohol', 'malic_acid', 'ash', 'alcalinity_of_ash',
                    'flavanoids','nonflavanoid_phenols', 'proanthocyanins', 'color_intensity', 'hue', 'od280 od315_of_diluted_wines',
                    'proline']
 
-X = wine_df.drop(['hue', 'class'], axis=1)
+X = wine_df.drop(['hue', 'class','alcohol', 'magnesium', 'ash'], axis=1)
 y = wine_df['hue']
 
 # Splitting features and target dataset into: train and test
